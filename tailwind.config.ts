@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,26 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				gradients: {
+					purple: {
+						start: '#1f1c2c',
+						end: '#928dab'
+					},
+					button: {
+						start: '#ff9966',
+						end: '#ff5e62'
+					},
+					slot: {
+						start: '#36d1dc',
+						end: '#5b86e5'
+					}
 				}
+			},
+			backgroundImage: {
+				'gradient-body': 'linear-gradient(135deg, #1f1c2c, #928dab)',
+				'gradient-button': 'linear-gradient(90deg, #ff9966, #ff5e62)',
+				'gradient-slot': 'linear-gradient(90deg, #36d1dc, #5b86e5)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
